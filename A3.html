@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>My First JavaScript page</title>
+<body>
+	<p id="para1">I met her outside Fresno in September;</p>
+		<p id="para2"> 
+	I can still recall the neon sign she wore;
+	</p>
+		<p id="para3"> 
+	She was crashin' through the guardrail but I loved her;
+	</p>
+	<script>
+	
+	var firstPara = document.getElementById("para1").innerHTML
+	document.write("<br>=============================<br>"+firstPara)
+	document.write("<br>Random Number Generator.<br>")
+	var patt = /\s/
+	var count = 0
+	
+	var words = firstPara.split(' ');
+	//var spaces = firstPara.search(patt)
+	document.write("<br>Words: "+words+"<br>")
+	//while(spaces != -1)
+		//{
+		//firstPara = firstPara.substring(spaces+1)
+		//document.write("<br>Substring: "+ firstPara)
+		//spaces = firstPara.search(patt)
+		//count ++
+		//}
+	
+	//for(i =0;i< 100;i++){
+	//document.write(Math.random()+"<br>")
+	//}
+	//
+	//count += 1
+	count = words.length;
+	document.write("Number of spaces: "+ count)
+	var randIndex = Math.floor(Math.random()*count);
+	
+	
+	
+	</script>
+	
+</body>
+</html>

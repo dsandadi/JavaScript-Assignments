@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>
+Home work 1_Adv
+</title>
+<body>
+Hi, This is advanced assignment.
+<p id = "demo">
+</p>
+<script>
+
+var first
+document.write("first is not a number "+isNaN(first))
+
+while(isNaN(first))
+first = parseInt(prompt("Enter fist number"));
+
+first = parseInt(first)
+var second
+while(isNaN(second))
+second = parseInt(prompt("Enter second number"));
+
+var result = first+second;
+document.getElementById("demo").innerHTML = "first is "+first+"<br>Second is "+second+"<br>";
+alert("sum is "+ result)
+</script>
+
+</body>
+
+</html>

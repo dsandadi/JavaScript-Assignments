@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<title>
+Assignment 5.
+</title>
+<body>
+Hi, this is dinesh, My assignment 5.
+<p id = "currentDate">
+</p>
+<p id = "utcDate">
+</p>
+
+<button onClick =	displayDate() >clickMe</button>
+
+<script>
+
+function displayDate(){
+	var myVar = setInterval(timer,1000)
+}
+
+function timer(){
+document.getElementById("currentDate").innerHTML = "My current time :"
+document.getElementById("utcDate").innerHTML = "My UTC time :"
+var d = new Date()
+document.getElementById("currentDate").innerHTML += d
+var utc = d.toUTCString()
+document.getElementById("utcDate").innerHTML += utc
+}
+</script>
+</body>
+
+
+</html>
